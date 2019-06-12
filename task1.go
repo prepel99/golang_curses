@@ -13,18 +13,14 @@ func main() {
   flag.Visit(func(f *flag.Flag) {
     flagSetCount++
   })
-  if flagSetCount < 2 {
+  if flagSetCount == 0 {
+    fmt.Println("info")
+  } else if flagSetCount < 2 {
     fmt.Println("Params should be set")
   } else {
 	 outPut(*width, *height)
   }
 }
-
-
-
-
-
-
 
 func outPut(width, height uint64) {
 	for i := uint64(0); i < height; i++ {
