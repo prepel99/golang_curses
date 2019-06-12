@@ -20,6 +20,12 @@ func main() {
   }
 }
 
+
+
+
+
+
+
 func outPut(width, height uint64) {
 	for i := uint64(0); i < height; i++ {
 		if i%2 != 0 {
